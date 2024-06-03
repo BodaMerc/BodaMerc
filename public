@@ -1,0 +1,26 @@
+class B
+{
+public:
+	int _b;
+};
+class C :virtual public B
+{
+public:
+	int _c;
+};
+class D : virtual public B
+{
+public:
+	int _d;
+};
+class A :public C, public D
+{
+public:
+	int _a;
+};
+int main()
+{
+	cout << sizeof(A) << endl;//输出结果为24
+	system("pause");
+	return 0;
+}
