@@ -1,0 +1,5 @@
+SharedPtr()noexcept = default // 
+explicit SharedPtr(T* ptr) noexcept // 
+SharedPtr(const SharedPtr& ptr)noexcept // 
+SharedPtr(SharedPtr&& ptr)noexcept // 
+~SharedPtr() noexcept // 
